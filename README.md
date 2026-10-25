@@ -28,8 +28,29 @@ Proyecto completo y modular para la **detección y clasificación de grietas en 
 ```text
 Detector-de-Grietas-Proyect/
 │
-├── app.py                      # Aplicación web interactiva principal (Gradio)
-├── app_gradio.py               # Versión adaptada de la app (compatible con Google Colab / Local)
-├── server_api.py               # Servidor API REST con FastAPI
-├── deteccion_grietas_limpio.ipynb  # Notebook de Jupyter con el flujo completo de entrenamiento
-└── README.md                   # Documentación del proyecto
+├── app.py                      # Tu app local principal
+├── server_api.py               # Servidor FastAPI
+├── deteccion_grietas_limpio.ipynb
+├── README.md                   # README principal de tu repositorio GitHub
+│
+└── hf_space/                   # 🚀 Carpeta para Hugging Face Spaces
+    ├── app.py                  # (Renombra o copia app_2.py como app.py aquí dentro)
+    ├── requirements.txt        # Dependencias optimizadas para el Space
+    └── README.md               # Metadatos YAML y guía específica del Space
+```
+# 1. Clonar el repositorio
+git clone [https://github.com/AKA-0-3/Detector-de-Grietas-Proyect.git](https://github.com/AKA-0-3/Detector-de-Grietas-Proyect.git)
+cd Detector-de-Grietas-Proyect
+
+# 2. Crear un entorno virtual con Python 3.11 (OBLIGATORIO para evitar errores con TensorFlow)
+python3.11 -m venv .venv
+
+# 3. Activar el entorno virtual
+# En Linux / macOS:
+source .venv/bin/activate  
+# En Windows (PowerShell / CMD):
+.venv\Scripts\activate     
+
+# 4. Actualizar pip e instalar las dependencias
+pip install --upgrade pip
+pip install tensorflow opencv-python gradio fastapi uvicorn matplotlib scikit-learn
