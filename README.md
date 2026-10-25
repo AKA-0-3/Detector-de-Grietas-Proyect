@@ -34,7 +34,7 @@ Detector-de-Grietas-Proyect/
 ├── README.md                   # README principal de tu repositorio GitHub
 │
 └── hf_space/                   # 🚀 Carpeta para Hugging Face Spaces
-    ├── app.py                  # (Renombra o copia app_2.py como app.py aquí dentro)
+    ├── app2.py                  
     ├── requirements.txt        # Dependencias optimizadas para el Space
     └── README.md               # Metadatos YAML y guía específica del Space
 ```
